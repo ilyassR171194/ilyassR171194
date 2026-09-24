@@ -68,8 +68,12 @@
 
 <div align="center">
 
-<img height="165" src="https://github-readme-stats.vercel.app/api?username=ilyassR171194&show_icons=true&bg_color=05070d&title_color=00e5ff&icon_color=ff004c&text_color=c9d1d9&border_color=00e5ff&include_all_commits=true&count_private=true"/>
-<img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=ilyassR171194&layout=compact&bg_color=05070d&title_color=00e5ff&text_color=c9d1d9&border_color=00e5ff"/>
+<img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=ilyassR171194&theme=github_dark"/>
+
+<br/>
+
+<img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=ilyassR171194&theme=github_dark"/>
+<img src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=ilyassR171194&theme=github_dark"/>
 
 <br/>
 
