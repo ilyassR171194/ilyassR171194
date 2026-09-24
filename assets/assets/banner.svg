@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 300" width="1200" height="300">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#05070d"/>
+      <stop offset="0.5" stop-color="#08131f"/>
+      <stop offset="1" stop-color="#05070d"/>
+    </linearGradient>
+    <linearGradient id="neon" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#00e5ff"/>
+      <stop offset="0.5" stop-color="#7b61ff"/>
+      <stop offset="1" stop-color="#ff004c"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="4" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="#0e2233" stroke-width="1"/>
+    </pattern>
+  </defs>
+  <rect width="1200" height="300" fill="url(#bg)"/>
+  <rect width="1200" height="300" fill="url(#grid)" opacity="0.5"/>
+  <rect x="0" y="-40" width="1200" height="40" fill="#00e5ff" opacity="0.06">
+    <animate attributeName="y" from="-40" to="300" dur="4s" repeatCount="indefinite"/>
+  </rect>
+  <g transform="translate(120,150)" filter="url(#glow)">
+    <path d="M-70,0 C-30,-40 60,-55 120,-20 C90,-20 80,-6 120,10 C60,45 -30,40 -70,0 Z"
+          fill="none" stroke="url(#neon)" stroke-width="3">
+      <animate attributeName="opacity" values="0.6;1;0.6" dur="3s" repeatCount="indefinite"/>
+    </path>
+    <circle cx="95" cy="-12" r="4" fill="#ff004c">
+      <animate attributeName="opacity" values="1;0.2;1" dur="1.4s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+  <text x="600" y="150" text-anchor="middle" font-family="monospace"
+        font-size="64" font-weight="700" fill="url(#neon)" filter="url(#glow)"
+        letter-spacing="6">CYBER SHARK</text>
+  <text x="600" y="200" text-anchor="middle" font-family="monospace"
+        font-size="20" fill="#00e5ff" letter-spacing="10" opacity="0.85">
+    THE DEEP SEA ARCHITECT
+  </text>
+</svg>
